@@ -1,0 +1,1 @@
+give the complete steps in details the code the larning techniques so i can complete it really good
