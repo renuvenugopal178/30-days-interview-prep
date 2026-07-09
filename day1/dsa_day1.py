@@ -11,6 +11,7 @@ def two_sum_brute_force(nums,target):
 nums = [2,7,11,15]
 target = 9
 
+
 result = two_sum_brute_force(nums,target)
 print(result)
 
