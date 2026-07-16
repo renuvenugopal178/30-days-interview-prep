@@ -1,0 +1,471 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f4f7fc;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 50px;
+
+    background:#2563eb;
+
+    color:white;
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:25px;
+
+}
+
+nav ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:0.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#ffe066;
+
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+
+    text-align:center;
+
+    padding:70px 20px;
+
+}
+
+.hero img{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #2563eb;
+
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    margin-top:25px;
+
+    color:#2563eb;
+
+}
+
+.hero p{
+
+    margin-top:15px;
+
+    font-size:20px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+button{
+
+    margin:15px;
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563eb;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+button:hover{
+
+    background:#1e40af;
+
+    transform:translateY(-3px);
+
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+
+    width:85%;
+
+    margin:40px auto;
+
+    padding:35px;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+section h2{
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+/* ===========================
+   SKILLS
+=========================== */
+
+.skill-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+.skill{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:25px;
+
+    transition:0.3s;
+
+    cursor:pointer;
+
+}
+
+.skill:hover{
+
+    background:#1e40af;
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   COUNTER
+=========================== */
+
+#counter{
+
+    font-size:70px;
+
+    color:#2563eb;
+
+    margin:20px;
+
+}
+
+/* ===========================
+   TABLE
+=========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+table td{
+
+    border:1px solid #ddd;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+table tr:nth-child(even){
+
+    background:#f8f8f8;
+
+}
+
+/* ===========================
+   FORM
+=========================== */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+input,
+
+textarea{
+
+    margin:10px 0;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+input:focus,
+
+textarea:focus{
+
+    outline:none;
+
+    border:2px solid #2563eb;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#2563eb;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark{
+
+    background:#111827;
+
+    color:white;
+
+}
+
+.dark section{
+
+    background:#1f2937;
+
+}
+
+.dark nav{
+
+    background:#111827;
+
+}
+
+.dark footer{
+
+    background:#111827;
+
+}
+
+.dark table td{
+
+    color:white;
+
+}
+
+.dark input,
+
+.dark textarea{
+
+    background:#374151;
+
+    color:white;
+
+    border:1px solid #666;
+
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+nav ul{
+
+margin-top:15px;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+nav ul li{
+
+margin:10px 0;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero img{
+
+width:160px;
+
+height:160px;
+
+}
+
+section{
+
+width:95%;
+
+padding:20px;
+
+}
+
+table{
+
+font-size:14px;
+
+}
+
+button{
+
+width:100%;
+
+margin:10px 0;
+
+}
+
+.skill-container{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}

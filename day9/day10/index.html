@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Renu Venugopal | JavaScript Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Renu
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero">
+
+        <img
+            src="images/profile.jpeg"
+            alt="Profile Picture"
+            id="profileImage"
+        >
+
+        <h1 id="title">
+
+            Hi, I'm Renu Venugopal
+
+        </h1>
+
+        <p id="subtitle">
+
+            AI • Machine Learning • Full Stack Development
+
+        </p>
+
+        <button onclick="changeTitle()">
+
+            Change Title
+
+        </button>
+
+        <button onclick="changeTheme()">
+
+            Toggle Theme
+
+        </button>
+        <button onclick="randomQuote()">
+
+Random Quote
+
+</button>
+
+<button onclick="changeImage()">
+
+Highlight Image
+
+</button>
+
+    </section>
+
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2>
+
+            About Me
+
+        </h2>
+
+        <p id="aboutText">
+
+            I am passionate about Artificial Intelligence,
+            Full Stack Development,
+            Machine Learning,
+            and Cybersecurity.
+
+        </p>
+
+        <button onclick="changeAbout()">
+
+            Read More
+
+        </button>
+
+    </section>
+
+
+
+    <!-- Skills -->
+
+    <section id="skills">
+
+        <h2>
+
+            Skills
+
+        </h2>
+
+        <div class="skill-container">
+
+            <div class="skill">
+
+                Python
+
+            </div>
+
+            <div class="skill">
+
+                Java
+
+            </div>
+
+            <div class="skill">
+
+                React
+
+            </div>
+
+            <div class="skill">
+
+                JavaScript
+
+            </div>
+
+            <div class="skill">
+
+                SQL
+
+            </div>
+
+            <div class="skill">
+
+                Machine Learning
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Counter -->
+
+    <section>
+
+        <h2>
+
+            JavaScript Counter
+
+        </h2>
+
+        <h1 id="counter">
+
+            0
+
+        </h1>
+
+        <button onclick="increaseCounter()">
+
+            +
+
+        </button>
+
+        <button onclick="decreaseCounter()">
+
+            -
+
+        </button>
+
+        <button onclick="resetCounter()">
+
+            Reset
+
+        </button>
+
+    </section>
+
+
+    <!-- Projects -->
+
+    <section id="projects">
+
+        <h2>
+
+            Projects
+
+        </h2>
+
+        <table>
+
+            <tr>
+
+                <th>
+
+                    Project
+
+                </th>
+
+                <th>
+
+                    Technology
+
+                </th>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    Eventify
+
+                </td>
+
+                <td>
+
+                    React + TypeScript
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    HashNet
+
+                </td>
+
+                <td>
+
+                    Python + AI
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    MindMate Lite
+
+                </td>
+
+                <td>
+
+                    React
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    Koode
+
+                </td>
+
+                <td>
+
+                    Flutter
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>
+
+            Contact
+
+        </h2>
+
+        <form onsubmit="showMessage(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                placeholder="Your Message"
+                rows="5"
+            ></textarea>
+
+            <button type="submit">
+
+                Send
+
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p id="footer">
+
+            © 2026 Renu Venugopal
+
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
